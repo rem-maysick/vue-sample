@@ -1,0 +1,36 @@
+.profile {
+  width: 70vw;
+  max-width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto 30px;
+}
+.profile-images {
+  width: 45%;
+}
+.profile-images img {
+  width: 100%;
+}
+.profile-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 45%;
+  padding: 10px;
+  text-align: center;
+  border: solid 1px #fff;
+}
+.profile-list :is(dt, dd) {
+  padding: 5px 0;
+}
+.profile-list-name {
+  width: 100%;
+  font-size: 25px;
+}
+.profile-list dt {
+  width: 40%;
+}
+.profile-list dd {
+  width: 60%;
+  margin-left: 0;
+}/*# sourceMappingURL=style.css.map */

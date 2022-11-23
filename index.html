@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/papaparse@5.3.0/papaparse.min.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <section class="profile" v-for="animal in animals" :key="animal">
+        <div class="profile-images">
+          <img :src="`img/${animal.id}.jpg`" alt="" />
+        </div>
+        <dl class="profile-list">
+          <div class="profile-list-name">{{animal.名前}}</div>
+          <dt>性別</dt>
+          <dd>{{animal.性別}}</dd>
+          <dt>生年月日</dt>
+          <dd>{{animal.生年月日}}</dd>
+          <dt>年齢</dt>
+          <dd>{{animal.年齢}}</dd>
+          <dt>体重</dt>
+          <dd>{{animal.体重}}</dd>
+          <dt>狂犬病ワクチン</dt>
+          <dd>{{animal.狂犬病ワクチン}}</dd>
+          <dt>混合ワクチン</dt>
+          <dd>{{animal.混合ワクチン}}</dd>
+          <dt>マイクロチップ</dt>
+          <dd>{{animal.マイクロチップ}}</dd>
+          <dt>既往歴</dt>
+          <dd>{{animal.既往歴}}</dd>
+          <dt>施設に来た日</dt>
+          <dd>{{animal.施設に来た日}}</dd>
+        </dl>
+      </section>
+    </div>
+  </body>
+</html>

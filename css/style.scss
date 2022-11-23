@@ -1,0 +1,37 @@
+.profile {
+  width: 70vw;
+  max-width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto 30px;
+  &-images {
+    width: 45%;
+    img {
+      width: 100%;
+    }
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    // max-width: 300px;
+    padding: 10px;
+    text-align: center;
+    border: solid 1px #fff;
+  }
+  &-list :is(dt, dd) {
+    padding: 5px 0;
+  }
+  &-list-name {
+    width: 100%;
+    font-size: 25px;
+  }
+  &-list dt {
+    width: 40%;
+  }
+  &-list dd {
+    width: 60%;
+    margin-left: 0;
+  }
+}
