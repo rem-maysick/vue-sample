@@ -12,12 +12,18 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="app">
-      <animal-profile
-        v-for="animal in animals"
-        :animal="animal"
-        :key="animal.id"
-      ></animal-profile>
-    </div>
+    <main>
+      <h1>Vue.jsサンプル</h1>
+      <div id="app">
+        <animal-profile
+          v-for="animal in animals"
+          :animal="animal"
+          :key="animal.id"
+        ></animal-profile>
+      </div>
+    </main>
+    <footer>
+      <small>Vue.jsサンプル</small>
+    </footer>
   </body>
 </html>

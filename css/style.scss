@@ -1,10 +1,19 @@
+@use "variables" as *;
+
+h1,
+small {
+  display: block;
+  text-align: center;
+  padding: 50px 0;
+  text-decoration: 5px underline $ub-color; // <-別ファイルから設定を読み込む
+}
 .profile {
   width: 70vw;
   max-width: 700px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 0 auto 30px;
+  margin: 0 auto 60px;
   &-images {
     width: 45%;
     img {

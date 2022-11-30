@@ -20,7 +20,7 @@ app.component("animal-profile", {
   template: `
   <section class="profile">
     <div class="profile-images">
-      <img :src="'img/' + animal.id + '.jpg'" alt="" />
+      <img :src="'img/' + animal.id + '.png'" alt="" />
     </div>
     <dl class="profile-list">
       <div class="profile-list-name">{{animal.名前}}</div>
