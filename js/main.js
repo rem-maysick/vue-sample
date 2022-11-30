@@ -5,7 +5,7 @@ const app = Vue.createApp({
     };
   },
   mounted() {
-    Papa.parse("animals.csv", {
+    Papa.parse("../data/animals.csv", {
       download: true,
       header: true,
       complete: (parsed) => {
